@@ -1,11 +1,11 @@
-//Creat container
+//Create container
 var container=document.createElement("div");
 container.setAttribute("class","container");
 var row=document.createElement("div");
 row.classList.add("row","m-3");
 container.append(row);
 
-//fetch restcountry data
+//fetch res country data
 var res=fetch("https://restcountries.com/v2/all")
 res.then((data)=>data.json()).then((value)=>foo(value));
 
